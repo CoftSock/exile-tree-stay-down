@@ -1,0 +1,1 @@
+ExecVM "custom\removetrees.sqf";
