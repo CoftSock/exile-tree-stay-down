@@ -70,6 +70,7 @@ try
 	diag_log format ["Tree is dead.... %1, %2, %3", _treePosition, _tree, _treeNetId];
 	_extDB2Message = ["insertTree", _data] call ExileServer_util_extDB2_createMessage;
 	_extDB2Message call ExileServer_system_database_query_fireAndForget;
+	[_tree] call removeTrees;//should name it ExileServer_object_tree_network_removeTrees
 	};
 	if (_weaponHolders isEqualTo []) then
 	{	
